@@ -4,9 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SquareComponent } from './square/square.component';
+import { GameComponent } from './game/game.component';
+import { BoardComponent } from './board/board.component';
 
 @NgModule({
-  declarations: [AppComponent, SquareComponent],
+  declarations: [AppComponent, SquareComponent, GameComponent, BoardComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
