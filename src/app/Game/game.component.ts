@@ -19,6 +19,7 @@ export class GameComponent {
     this.isDraw = '';
     this.counter=0;
     this.freshPage = false ;
+    this.xIsNext = true
 
   }
 
@@ -31,6 +32,7 @@ export class GameComponent {
       this.squares.splice(idx, 1 , this.player)
       this.xIsNext=!this.xIsNext
       this.counter++
+      console.log(this.squares, this.squares[idx])
     }
     this.winner = this.calculateWinner()
     if(!this.winner && this.counter == 9){
